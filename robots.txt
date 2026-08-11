@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stories.rationaloptimistsociety.com/sitemap.xml
