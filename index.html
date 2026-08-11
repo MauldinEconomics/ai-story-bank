@@ -36,6 +36,8 @@
   --gold: #B97E14;
   --gold-bright: #E9A23B;
   --gold-wash: #FBF3E2;
+  --sub-bg: #191C22; --sub-border: #262A33; --sub-ink: #F2EFE7;
+  --sub-ink-2: #AEB4C0; --sub-btn: #E9A23B; --sub-btn-ink: #23180A;
   --shadow: 0 1px 2px rgba(27,30,35,.05), 0 8px 28px -12px rgba(27,30,35,.14);
   --shadow-lift: 0 2px 4px rgba(27,30,35,.06), 0 18px 44px -14px rgba(27,30,35,.22);
   --modal-backdrop: rgba(24,22,16,.45);
@@ -56,6 +58,8 @@
     --ink: #EDEBE3; --ink-2: #ABB1BD; --ink-3: #7E8492;
     --hairline: #2B2F38; --hairline-2: #23272F;
     --gold: #E8B45A; --gold-bright: #E9A23B; --gold-wash: #2A2415;
+    --sub-bg: #F1EEE5; --sub-border: #DCD7C9; --sub-ink: #191C22;
+    --sub-ink-2: #4C5361; --sub-btn: #8F5D08; --sub-btn-ink: #FFF6E6;
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 28px -12px rgba(0,0,0,.5);
     --shadow-lift: 0 2px 4px rgba(0,0,0,.35), 0 18px 44px -14px rgba(0,0,0,.6);
     --modal-backdrop: rgba(5,6,9,.62);
@@ -69,6 +73,8 @@
   --ink: #EDEBE3; --ink-2: #ABB1BD; --ink-3: #7E8492;
   --hairline: #2B2F38; --hairline-2: #23272F;
   --gold: #E8B45A; --gold-bright: #E9A23B; --gold-wash: #2A2415;
+  --sub-bg: #F1EEE5; --sub-border: #DCD7C9; --sub-ink: #191C22;
+  --sub-ink-2: #4C5361; --sub-btn: #8F5D08; --sub-btn-ink: #FFF6E6;
   --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 28px -12px rgba(0,0,0,.5);
   --shadow-lift: 0 2px 4px rgba(0,0,0,.35), 0 18px 44px -14px rgba(0,0,0,.6);
   --modal-backdrop: rgba(5,6,9,.62);
@@ -81,6 +87,8 @@
   --ink: #1B1E23; --ink-2: #4C5361; --ink-3: #7A8090;
   --hairline: #E6E2D8; --hairline-2: #EFECE4;
   --gold: #B97E14; --gold-bright: #E9A23B; --gold-wash: #FBF3E2;
+  --sub-bg: #191C22; --sub-border: #262A33; --sub-ink: #F2EFE7;
+  --sub-ink-2: #AEB4C0; --sub-btn: #E9A23B; --sub-btn-ink: #23180A;
   --shadow: 0 1px 2px rgba(27,30,35,.05), 0 8px 28px -12px rgba(27,30,35,.14);
   --shadow-lift: 0 2px 4px rgba(27,30,35,.06), 0 18px 44px -14px rgba(27,30,35,.22);
   --modal-backdrop: rgba(24,22,16,.45);
@@ -111,7 +119,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .masthead-in {
   display: flex; align-items: center; justify-content: space-between;
-  gap: 16px; padding: 12px 0;
+  gap: 16px;
+  /* Longhand on purpose: the `padding: 12px 0` shorthand cancelled .wrap's
+     `0 24px` gutter (equal specificity, later rule wins), which pushed the
+     wordmark and the Subscribe pill hard against both screen edges. */
+  padding-top: 12px; padding-bottom: 12px;
 }
 .wordmark { display: flex; align-items: baseline; gap: 10px; min-width: 0; }
 .wordmark .sun {
@@ -338,6 +350,44 @@ select.sort {
 }
 .submit-cta a.mail:hover { filter: brightness(1.06); }
 
+/* ============ SUBSCRIBE ============ */
+.mast-right { display: flex; align-items: center; gap: 13px; min-width: 0; }
+a.mast-sub {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--gold); text-decoration: none; white-space: nowrap; font-weight: 700;
+  background: var(--gold-wash); border: 1px solid color-mix(in srgb, var(--gold-bright) 40%, var(--hairline));
+  padding: 6px 12px; border-radius: 999px;
+}
+a.mast-sub:hover { border-color: var(--gold-bright); filter: brightness(1.03); }
+a.sub-inline {
+  color: var(--gold); font-weight: 650; text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--gold-bright) 45%, transparent);
+}
+a.sub-inline:hover { border-bottom-color: var(--gold-bright); }
+.join-line { margin-top: 18px; font-size: 15px; color: var(--ink-2); }
+/* Deliberately dark so it reads as the primary action without competing with the
+   gold "spot an error" panel directly beneath it. */
+.subscribe-cta {
+  margin: 34px 0 0; border-radius: 14px; padding: 26px 28px;
+  background: var(--sub-bg); border: 1px solid var(--sub-border);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 18px; justify-content: space-between;
+}
+.subscribe-cta .t { font-family: var(--serif); font-size: 21px; font-weight: 700; color: var(--sub-ink); }
+.subscribe-cta .s { color: var(--sub-ink-2); font-size: 14px; margin-top: 4px; max-width: 54ch; }
+.subscribe-cta a.join {
+  background: var(--sub-btn); color: var(--sub-btn-ink); text-decoration: none; font-weight: 700; font-size: 14px;
+  padding: 12px 20px; border-radius: 10px; white-space: nowrap;
+}
+.subscribe-cta a.join:hover { filter: brightness(1.06); }
+.modal-sub {
+  margin: 20px 0 0; padding-top: 15px; border-top: 1px solid var(--hairline);
+  font-size: 14px; color: var(--ink-2);
+}
+@media (max-width: 560px) {
+  .subscribe-cta { padding: 22px 20px; }
+  .subscribe-cta a.join { width: 100%; text-align: center; }
+}
+
 /* ============ FOOTER ============ */
 footer { border-top: 1px solid var(--hairline); margin-top: 56px; padding: 30px 0 46px; }
 .foot-in { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: baseline; }
@@ -367,7 +417,10 @@ footer { border-top: 1px solid var(--hairline); margin-top: 56px; padding: 30px 
       <b>THE AI STORY BANK</b>
       <span>· RATIONAL OPTIMIST SOCIETY</span>
     </div>
-    <div class="mast-count" id="mastCount"></div>
+    <div class="mast-right">
+      <div class="mast-count" id="mastCount"></div>
+      <a class="mast-sub" href="https://rationaloptimistsociety.substack.com/subscribe" target="_blank" rel="noopener">Subscribe</a>
+    </div>
   </div>
 </header>
 
@@ -388,6 +441,7 @@ footer { border-top: 1px solid var(--hairline); margin-top: 56px; padding: 30px 
         <p class="worst-line">“This is the worst AI will ever be. It only gets better from here.”
           <small>— The Rational Optimist Society</small>
         </p>
+        <p class="join-line">New stories go out to tens of thousands of readers first. <a class="sub-inline" href="https://rationaloptimistsociety.substack.com/subscribe" target="_blank" rel="noopener">Join the Rational Optimist Society →</a></p>
       </div>
     </div>
   </div>
@@ -418,6 +472,13 @@ footer { border-top: 1px solid var(--hairline); margin-top: 56px; padding: 30px 
 
 <section class="method">
   <div class="wrap">
+    <div class="subscribe-cta">
+      <div>
+        <div class="t">Get the next one before anyone else</div>
+        <div class="s">The Rational Optimist Society is a free newsletter about the technologies actually being built — written the same way this bank is: numbers, sources, and the limits stated out loud.</div>
+      </div>
+      <a class="join" href="https://rationaloptimistsociety.substack.com/subscribe" target="_blank" rel="noopener">Subscribe free</a>
+    </div>
     <div class="submit-cta">
       <div>
         <div class="t">Know a story we missed? Spot an error?</div>
@@ -430,7 +491,9 @@ footer { border-top: 1px solid var(--hairline); margin-top: 56px; padding: 30px 
 
 <footer>
   <div class="wrap foot-in">
-    <div class="fm">THE RATIONAL OPTIMIST SOCIETY · UPDATED AUGUST 2026</div>
+    <div class="fm">THE RATIONAL OPTIMIST SOCIETY · UPDATED AUGUST 2026 ·
+      <a class="sub-inline" href="https://rationaloptimistsociety.substack.com/subscribe" target="_blank" rel="noopener">SUBSCRIBE</a>
+    </div>
     <div class="motto">“Pessimists sound smart. Optimists make money — and history.”</div>
   </div>
 </footer>
@@ -457,6 +520,7 @@ footer { border-top: 1px solid var(--hairline); margin-top: 56px; padding: 30px 
     <div class="caveat" id="mCaveatBox"><b>What we're careful about</b><p id="mCaveat"></p></div>
     <div class="prov-note" id="mProvBox"><b>How we sourced this</b><p id="mProv"></p></div>
     <div class="sources"><b id="mSrcHead">Receipts — check them yourself</b><ul id="mSources"></ul></div>
+    <p class="modal-sub">We find these one at a time, and check every number. <a class="sub-inline" href="https://rationaloptimistsociety.substack.com/subscribe" target="_blank" rel="noopener">Get new ones by email →</a></p>
     <div class="modal-nav">
       <button class="nav-btn" id="prevBtn" type="button"></button>
       <button class="nav-btn" id="nextBtn" type="button"></button>
