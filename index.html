@@ -390,7 +390,6 @@ footer { border-top: 1px solid var(--hairline); margin-top: 56px; padding: 30px 
         </p>
       </div>
     </div>
-    <div class="ledger" id="ledger"></div>
   </div>
 </section>
 
@@ -419,14 +418,6 @@ footer { border-top: 1px solid var(--hairline); margin-top: 56px; padding: 30px 
 
 <section class="method">
   <div class="wrap">
-    <h2>The rules of the bank</h2>
-    <p class="sub">Optimism doesn’t mean gullibility. Every entry has to clear these bars before it gets a number — and where one is weaker, we say which part is weak.</p>
-    <div class="rules">
-      <div class="rule"><div class="no">Rule 01</div><h4>It happened.</h4><p>No demos, no promises, no “coming soon.” Real outcomes for real people — things you could have read in the news, because they occurred.</p></div>
-      <div class="rule"><div class="no">Rule 02</div><h4>It’s measured.</h4><p>Numbers over adjectives. Trials over testimonials. Where the evidence is early, the story says so in plain words.</p></div>
-      <div class="rule"><div class="no">Rule 03</div><h4>It has receipts.</h4><p>Most stories link straight to the paper, the hospital or the regulator, so you don’t have to take our word for it.</p></div>
-      <div class="rule"><div class="no">Rule 04</div><h4>We correct in public.</h4><p>Every story here has been checked against its primary source, and where that check contradicted us we changed the story and said so. Several entries carry a note explaining which number we got wrong. Three stories were deleted outright when the source didn’t support them.</p></div>
-    </div>
     <div class="submit-cta">
       <div>
         <div class="t">Know a story we missed? Spot an error?</div>
@@ -5120,15 +5111,6 @@ function renderGrid() {
 }
 
 function renderLedger() {
-  const named = STORIES.filter(s => s.people && s.people.trim()).length;
-  const sources = STORIES.reduce((a, s) => a + s.sources.filter(x => x.url).length, 0);
-  const years = STORIES.map(s => s.year);
-  $("ledger").innerHTML = `
-    <div><div class="v"><em>${STORIES.length}</em></div><div class="l">True stories</div></div>
-    <div><div class="v">${sources}</div><div class="l">Linked receipts</div></div>
-    <div><div class="v">${STORIES.filter(s => s.caveat).length}</div><div class="l">Carry a stated caveat</div></div>
-    <div><div class="v">${named}</div><div class="l">With named people</div></div>
-    <div><div class="v">${Math.min(...years)}–${String(Math.max(...years)).slice(2)}</div><div class="l">Years covered</div></div>`;
   $("mastCount").innerHTML = `<b>${STORIES.length}</b> STORIES · EVERY ONE SOURCE-CHECKED`;
 }
 
