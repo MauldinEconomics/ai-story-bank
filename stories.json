@@ -124,6 +124,41 @@
   ]
  },
  {
+  "id": "srt-h-autonomous-gallbladder-steps",
+  "cat": "cures",
+  "year": 2025,
+  "place": "Baltimore, Maryland, USA",
+  "people": "Ji Woong (Brian) Kim, Juo-Tung Chen, Jeffrey Jopling and Axel Krieger at Johns Hopkins University, with Lucy Xiaoyang Shi and Chelsea Finn at Stanford University",
+  "title": "A robot completed the riskiest steps of a gallbladder removal by itself, eight times out of eight, on pig gallbladders in a laboratory",
+  "hook": "Nobody was holding the controls. And the tissue was pig, on a bench, not a patient.",
+  "body": [
+   "A da Vinci surgical robot leaned over a pig's gallbladder on a bench at Johns Hopkins University. Over about five minutes it worked through 17 separate jobs: grab the gallbladder, place six metal clips, make two cuts. The clips and cuts go on the cystic duct and the cystic artery, the small tubes carrying bile and blood. Cut in the wrong place and you injure the main bile duct. That is the injury surgeons fear most in this operation.",
+   "The system is called SRT-H, short for hierarchical surgical robot transformer. It is two neural networks stacked together. The top one looks at the camera feed and writes the next instruction in plain English, things like grab the gallbladder head, or move the left gripper closer to me. The bottom one turns that sentence into arm movements. Both learned by copying humans. The team recorded 16,000 example movements, roughly 17 hours of data, across 34 pig gallbladders. Then they ran the trained system on eight gallbladders it had never seen. It finished all 17 jobs on all eight. On average it spotted and fixed its own mistakes about six times per run, without anyone telling it to.",
+   "The tissue matters, so be plain about it. These were pig gallbladders already removed from the animal and placed on a bench. No living animal was operated on. No human patient was involved at any point. A person also sat beside the robot. Each time the robot fired a clip it paused and waited for the human to load the next one, and it asked the human to swap tools. The five minute seventeen second average is robot time only. It excludes the clip loading and the tool changes. Gallbladders with unusual plumbing, where the artery crosses over the duct or branches, were kept out of the training data. The authors put that at roughly one in ten, and say the system is not failure-proof on anatomy it has not seen.",
+   "A human surgeon still finished the same tasks faster. What is new here is length and recovery. Earlier autonomous surgery demonstrations were short single actions in tidy setups. This was a long chain of steps on soft, floppy, variable tissue, and when the lower network fumbled, the upper one noticed and told it to try again. Axel Krieger's group published the work in Science Robotics on 9 July 2025."
+  ],
+  "stat": {
+   "v": "8 of 8",
+   "l": "removed pig gallbladders on which the robot finished all 17 surgical steps with no human taking over"
+  },
+  "why": "Surgical autonomy has been promised for decades and has mostly meant one stitch at a time. This is the first published case of a machine running a long, multi-step surgical sequence on real soft tissue and correcting its own errors as it went.",
+  "caveat": "Pig gallbladders on a bench, already removed from the animal. Not a living animal, and not a person. Eight trials is a small number. A human loaded every clip and changed every tool, and that time is excluded from the reported five minutes. A surgeon was still faster. Rare anatomical variants, about one gallbladder in ten, were left out of the training data, and the authors say performance on unfamiliar anatomy is not guaranteed. Bleeding and breathing motion, both unavoidable in a live patient, were absent from the test. The training demonstrations were performed by non-clinical research assistants trained by a surgical resident, not by surgeons.",
+  "sources": [
+   {
+    "name": "PubMed record for Science Robotics (July 2025) — journal record and full abstract of the peer-reviewed paper",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40632876/"
+   },
+   {
+    "name": "arXiv (May to July 2025) — the authors' own full preprint, with methods, trial counts, correction counts and limitations",
+    "url": "https://arxiv.org/abs/2505.10251"
+   },
+   {
+    "name": "SRT-H project page, Johns Hopkins and Stanford authors (2025) — authors' page with video and the task breakdown",
+    "url": "https://h-surgical-robot-transformer.github.io/"
+   }
+  ]
+ },
+ {
   "id": "sarah-ezekiel",
   "cat": "abilities",
   "year": 2025,
@@ -773,6 +808,41 @@
   "caveat": "This is one participant's own account, posted to social media during a feasibility study, not published trial data."
  },
  {
+  "id": "nice-fracture-ai-nhs",
+  "cat": "early",
+  "year": 2025,
+  "place": "England, United Kingdom",
+  "people": "NICE's diagnostics advisory committee, with patient and clinical experts; the four permitted products are Rayvolve (AZmed), TechCare Alert, BoneView (Gleamer) and RBfracture (Radiobotics)",
+  "title": "England's health watchdog let four fracture-spotting AI programmes into the NHS, on condition they keep proving themselves",
+  "hook": "A broken bone missed in a busy emergency department is one of the most common mistakes in medicine.",
+  "body": [
+   "When you arrive at urgent care with a wrist that might be broken, the X-ray is often read on the spot by an emergency doctor or a nurse practitioner rather than by a radiologist. The specialist report can take hours or days. So fractures get missed. The patient goes home in a bandage, the bone shifts, and what would have been a cast turns into surgery.",
+   "On 14 January 2025 NICE, the body that judges which technologies the NHS in England should use, published its verdict on five AI programmes that mark up suspected fractures on X-rays. Four were allowed into the NHS: Rayvolve and TechCare Alert for patients of any age, BoneView and RBfracture for patients aged two and over. The fifth, qMSK, was confined to research, because the reviewers could not find a single study comparing X-ray reading with and without it.",
+   "Sixteen studies met the review's criteria. In the study NICE leaned on most heavily for BoneView, emergency physicians' sensitivity rose from 61% to 74% with the software. Sensitivity here means the share of X-rays that genuinely did show a fracture and were correctly identified, so roughly four in ten real fractures were being missed unassisted, and closer to two and a half in ten with help. Other products showed similar movement: 74% to 83% for RBfracture, 79% to 94% for Rayvolve. Just as important, NICE found no study in which specificity dropped, meaning the extra fractures did not appear to come at the price of raising false alarms on healthy bones.",
+   "What NICE authorised is narrow and conditional, and worth stating plainly. This is an early value assessment, which permits use only while the companies actively gather real-world evidence, only alongside a human reading the same X-ray, and only once a product has passed NHS England's Digital Technology Assessment Criteria. UK radiation rules already require a trained person to evaluate an X-ray, so the software cannot legally read alone. The companies must report to NICE every year, and submit evidence after two years, when NICE will decide whether any of this becomes routine. NICE states it may withdraw the guidance if the conditions are not met."
+  ],
+  "stat": {
+   "v": "61% to 74%",
+   "l": "share of genuinely fractured X-rays that emergency physicians correctly spotted, before and after AI help, in the study NICE relied on most"
+  },
+  "why": "Missed fractures are among the most common diagnostic errors in emergency medicine, and the people reading those X-rays are usually not radiologists. The mechanism is also worth noting: rather than a simple yes or no, the regulator said yes provisionally, named the exact products, named the one that failed, and made continued permission depend on evidence actually turning up.",
+  "caveat": "NICE's own committee was blunt about how thin the evidence is. Most of the 16 studies were retrospective case-control studies. None was done in a UK urgent care setting. In many, the readers were radiologists rather than the emergency staff who would actually use the software, and they judged X-rays in isolation without the patient or their history in front of them, so their unassisted scores were probably worse than in real practice. NICE said this \"could overestimate\" the benefit of the AI. A clinical expert flagged that some studies had folded the AI's own output into the reference standard used to grade it, which is circular. Only two studies reported accuracy in children, and there is very little evidence for children under two. Nothing here demonstrates that patients ended up healthier. That is precisely what the two-year evidence period is meant to establish, and NICE has not yet said it can be adopted routinely.",
+  "sources": [
+   {
+    "name": "NICE HealthTech guidance HTG739 (published 14 January 2025, formerly HTE20) — recommendations chapter listing the four permitted products, the age limits, the DTAC condition and the two-year evidence period",
+    "url": "https://www.nice.org.uk/guidance/htg739/chapter/1-recommendations"
+   },
+   {
+    "name": "NICE HTG739 committee discussion — the evidence review, the accuracy figures for each product, and NICE's own list of weaknesses including that no study was done in UK urgent care",
+    "url": "https://www.nice.org.uk/guidance/htg739/chapter/3-committee-discussion"
+   },
+   {
+    "name": "Radiology (2021), Duron et al., PMID 33944629 — the retrospective study of 600 patients across 17 French centres with 12 readers that NICE relied on for BoneView; its own headline result was an 8.7 percentage-point sensitivity gain across all readers combined",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33944629/"
+   }
+  ]
+ },
+ {
   "id": "rentosertib",
   "cat": "cures",
   "year": 2026,
@@ -909,6 +979,41 @@
    {
     "name": "Vesuvius Challenge — First Title Prize",
     "url": "https://scrollprize.substack.com/p/60000-first-title-prize-awarded"
+   }
+  ]
+ },
+ {
+  "id": "ema-aim-nash-qualification",
+  "cat": "cures",
+  "year": 2025,
+  "place": "Amsterdam, Netherlands",
+  "people": "The European Medicines Agency's Committee for Medicinal Products for Human Use (CHMP) and its Scientific Advice Working Party; PathAI of Boston, which built the tool",
+  "title": "Europe's medicines regulator agreed that an AI's reading of liver biopsies counts as valid evidence in drug trials",
+  "hook": "Three pathologists look at the same sliver of liver and often disagree. That disagreement has been quietly wrecking drug trials.",
+  "body": [
+   "MASH is a liver disease where fat builds up, the liver becomes inflamed, and scar tissue spreads. To test a drug against it, doctors take a needle biopsy and a pathologist scores what they see under the microscope: how much fat, how much inflammation, how much swelling of liver cells, how much scarring. Those scores decide who gets into the trial and whether the drug worked. The problem is that the scoring is a judgement call. Pathologists disagree with each other, and with their own earlier readings. When the measuring stick wobbles, a drug that works can look like a drug that failed.",
+   "On 27 February 2025 the EMA's human medicines committee adopted a qualification opinion on a tool called AIM-NASH. The tool is a stack of neural networks: one set marks up the features on the scanned slide pixel by pixel, another turns those maps into scores. A qualification opinion is the regulator agreeing in advance that data produced this way is scientifically sound enough to support an application to license a medicine. It is not approval of a medicine, and it is not approval of a medical device.",
+   "The evidence behind it is unusually well documented, because EMA published all 71 pages of its reasoning. The main study used 1,501 biopsy cases drawn from three real drug trials, including the phase 3 REGENERATE trial of obeticholic acid and a phase 2 semaglutide study. Ground truth for each case was set by a panel of two expert liver pathologists, with a third breaking ties. Eight pathologists then scored slides the ordinary way, at least three reads per case, while six other pathologists scored them with the AI's suggestions in front of them. Measured by how closely each matched the expert panel, the AI-assisted readings were clearly better for two features: inflammation scored 0.42 against 0.30, and cell swelling 0.56 against 0.41, on a scale where 1.0 is perfect agreement. The tool was also consistent with itself, giving the same answer on 93% to 96% of slides rescanned on three different days.",
+   "EMA was equally clear about the limits. A qualified pathologist must review every output and accept or reject each score, and EMA wrote that the tool \"is not a substitute\". The model is frozen: retrain it substantially and the qualification may not hold. It is tied to one specific brand of slide scanner. And EMA noted its opinion does not override Europe's medical device rules or the AI Act. Notably, Europe got there first. The US FDA qualified the same tool on 8 December 2025, more than nine months later."
+  ],
+  "stat": {
+   "v": "0.42 vs 0.30",
+   "l": "how closely pathologists matched an expert panel when scoring liver inflammation, with the AI's help versus without it"
+  },
+  "why": "Liver drug trials have partly been failing because the ruler used to measure success bends. A regulator accepting an AI-steadied measurement means fewer wasted trials and fewer patients enrolled in studies that could never have produced a clear answer. It is also the first time EMA accepted data generated with an AI's help as valid support for licensing a medicine.",
+  "caveat": "Even with the AI, agreement is far from perfect: 0.42 on a scale to 1.0 still means a great deal of residual disagreement between readers. On two of the four features the AI added nothing at all, and EMA said so bluntly, writing that there was \"literally no net gain\" for fat and scarring, where the scores were 0.677 versus 0.674 and 0.653 versus 0.645. The test set barely contained mild disease, with under 1% of cases having no scarring and under 1% no inflammation, so performance at the early end of the disease is largely untested. When the same slides were rescanned at three different sites, agreement dropped to between 85% and 91%, and was worst for early-stage scarring. Most importantly, this is qualified only for running clinical trials. It is not cleared to diagnose a patient in a clinic, and it is not a licence to sell the software as a medical device.",
+  "sources": [
+   {
+    "name": "European Medicines Agency / CHMP (adopted 27 February 2025, published 24 April 2025) — the full 71-page qualification opinion, containing the agreed context of use, the validation tables and EMA's own criticisms",
+    "url": "https://www.ema.europa.eu/en/documents/other/qualification-opinion-artificial-intelligence-based-measurement-non-alcoholic-steatohepatitis-histology-liver-biopsies-determine-disease-activity-nash-mash-clinical-trials_en.pdf"
+   },
+   {
+    "name": "European Medicines Agency — the register of qualification opinions on novel methodologies for medicine development, which explains what a qualification opinion legally is",
+    "url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-advice-protocol-assistance/opinions-letters-support-qualification-novel-methodologies-medicine-development"
+   },
+   {
+    "name": "US Food and Drug Administration (8 December 2025) — FDA's own announcement qualifying the same tool, which establishes that the European decision came first",
+    "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-qualifies-first-ai-drug-development-tool-will-be-used-mash-clinical-trials"
    }
   ]
  },
@@ -1088,6 +1193,45 @@
    {
     "name": "Google — expanding coverage",
     "url": "https://blog.google/technology/ai/expanding-flood-forecasting-coverage-helping-partners/"
+   }
+  ]
+ },
+ {
+  "id": "sais-surgeon-skill-continence",
+  "cat": "cures",
+  "year": 2023,
+  "place": "Los Angeles, USA and Gronau, Germany",
+  "people": "Dani Kiyasseh and Anima Anandkumar at Caltech, Andrew J. Hung and Runzhuo Ma at the University of Southern California, Christian Wagner at St Antonius-Hospital in Gronau, Germany, and Brian Miles at Houston Methodist Hospital",
+  "title": "An AI graded surgeons' hands from operating-room video, and the grade lined up with whether patients regained bladder control",
+  "hook": "Same operation, same hospital, different surgeon. Some patients stay dry and some do not.",
+  "body": [
+   "Robot-assisted prostate removal leaves some men incontinent for months afterwards. Surgeons have long suspected the difference lies in the hands, especially during one step, sewing the bladder back onto the urethra. Nobody could measure that at scale, because measuring surgical skill meant another surgeon sitting down and watching the video. Dani Kiyasseh, working with Andrew Hung at the University of Southern California and Anima Anandkumar at Caltech, built a system called SAIS that watches the video itself.",
+   "SAIS is a vision transformer, the same family of model behind modern image AI. It takes the raw surgical video plus the frame-to-frame motion, and grades two specific things: how the surgeon handles the needle, and how the surgeon drives it through tissue. It was tested on video from three hospitals on two continents, including St Antonius-Hospital in Gronau, Germany and Houston Methodist in Texas. At USC and at Gronau it separated high-skill from low-skill activity with area-under-the-curve scores of 0.82 to 0.88. An AUC of 0.5 is a coin flip and 1.0 is perfect.",
+   "The part that matters is the link to patients. When SAIS graded a piece of needle driving as high skill, that patient was 1.31 times more likely to recover urinary continence, confidence interval 1.08 to 1.58, p equals 0.005. Earlier work from Hung's lab pointed the same way using instrument motion data rather than video. His team ranked eight surgeons on machine-measured metrics such as tool velocity and wrist articulation. Of the patients operated on by the top four surgeons, 47.5% were continent at three months, against 36.7% of the patients operated on by the other four, p equals 0.034. At six months it was 68.3% against 59.2%, p equals 0.047. A later prospective study across two institutions, 193 operations by 20 surgeons, found those motion metrics still predicted continence after adjusting for each patient's own clinical risk factors.",
+   "Feedback is the point of all this. In a small randomised pilot at USC, 42 people with no robotic surgery experience practised suturing on a da Vinci simulator. Half received SAIS-generated feedback between rounds. Their needle handling score rose by 0.30 while the control group's fell by 0.02, p equals 0.018. The gain was largest among the people who started out worst. Needle driving also improved but not significantly, p equals 0.074."
+  ],
+  "stat": {
+   "v": "1.31x",
+   "l": "higher odds a patient regained bladder control when the AI graded the surgeon's needle driving as high skill"
+  },
+  "why": "If a machine can grade surgical technique from routine video, and the grade predicts how the patient recovers, then surgical skill becomes something you can measure, feed back and improve. That is a lever no drug or device gives you.",
+  "caveat": "These are associations, not proof that better technique causes better recovery. The 1.31 times figure holds for individual video clips. When the researchers pooled clips up to whole cases the direction held but significance was lost, odds ratio 1.89, confidence interval 0.95 to 3.76, p equals 0.071. The eight-surgeon continence comparison came from a historical cohort at a single centre, and the published abstract does not give the number of patients in each group. The feedback trial was 42 novices on a simulator in a single one-hour session, not surgeons operating on patients, and only one of its two skill measures improved significantly. Everything here is one operation, prostate removal, and one outcome, continence.",
+  "sources": [
+   {
+    "name": "PubMed Central, Nature Biomedical Engineering (March 2023) — free full text of the SAIS paper, with AUCs, the three hospitals and the continence odds ratio",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10307635/"
+   },
+   {
+    "name": "PubMed record for BJU International (2019) — Hung et al., the eight-surgeon ranking and the 3 and 6 month continence rates",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30811828/"
+   },
+   {
+    "name": "PubMed record for European Urology Open Science (2021) — prospective bi-institutional study, 193 operations by 20 surgeons, motion metrics adjusted for clinical factors",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33959725/"
+   },
+   {
+    "name": "PubMed record for Journal of Endourology (2024) — randomised pilot of AI-generated video feedback in 42 novices on a simulator",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37905524/"
    }
   ]
  },
