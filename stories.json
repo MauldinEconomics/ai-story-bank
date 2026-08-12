@@ -696,6 +696,49 @@
   ]
  },
  {
+  "id": "pave-cervical",
+  "cat": "early",
+  "year": 2025,
+  "place": "Nine countries, from Nigeria to Cambodia to Brazil",
+  "people": "Mark Schiffman and Brian Befano of the US National Cancer Institute; Kayode Ajenifuja at Obafemi Awolowo University Teaching Hospital, Nigeria; Karen Yeates and Bariki Mchome at Kilimanjaro Christian Medical Centre, Tanzania; Miriam Cremer and Karla Alfaro of Basic Health International in El Salvador; Amna Haider of Epicentre and Henry Phiri of Malawi's Ministry of Health; the HPV-Automated Visual Evaluation (PAVE) Consortium",
+  "title": "Cervical cancer needs a pathologist to catch. Software did it from one photograph, in nine countries.",
+  "hook": "A nurse takes one photo. The software says who needs treating before she leaves.",
+  "body": [
+   "Cervical cancer is almost entirely preventable, and it still killed around 280,000 women in 2024. Nearly 90 percent of those deaths happen in low- and middle-income countries. The reason is not that the disease is mysterious. It is that catching it needs a lab, or a doctor with a colposcope, or both, and most of the world has neither.",
+   "The usual workaround is called VIA. A nurse swabs the cervix with vinegar, waits, and looks for a white patch. It is cheap and it can be done in a village clinic. It is also a judgement call made by eye, and it is often wrong. So the US National Cancer Institute assembled a consortium to try replacing the eye with a camera and a neural network. Women take their own swab for an HPV test. If the swab is positive, a nurse photographs the cervix with a handheld camera, and a network called DenseNet-121 grades the picture as normal, indeterminate or severe.",
+   "The first results, published in the Journal of the National Cancer Institute in 2025, cover 27,654 women screened in Brazil, Cambodia, the Dominican Republic, El Salvador, Eswatini, Honduras, Malawi, Nigeria and Tanzania. Of those, 6,866 tested HPV-positive, and the first 1,832 to finish the whole process were analysed. Among that group, 138 turned out to have CIN3+, the grade of precancer that needs treating. The photograph sorted them well. Where the software said normal, 3 of 285 women had precancer, or 1.1 percent. Where it said severe, 85 of 618 did, or 13.8 percent. Combine the picture with which HPV type the woman carried, and the spread widened: no precancer at all in 128 women with a low-risk HPV type and a normal-looking photo, against 29 of 100 women who had HPV-16 and a severe-looking photo. In this first phase the grading was done afterwards on research servers, not live in the room.",
+   "The point is not that the software is clever. It is that a nurse in a clinic with no pathologist can now separate the woman who should be treated this morning from the woman who can safely be told to come back in a few years. That is the whole game in cervical cancer, and until now it needed a hospital."
+  ],
+  "stat": {
+   "v": "0% to 29%",
+   "l": "share of HPV-positive women who had precancer, from the lowest-risk group to the highest"
+  },
+  "why": "Cervical cancer is one of the most preventable cancers there is, and the women dying of it are dying of a missing pathologist rather than a missing cure. This is a way to make the decision without one.",
+  "caveat": "In this first phase the algorithm did not actually run in the clinic. Images were shipped to graphics servers and graded afterwards, so nobody's treatment was decided by it in real time. The authors say the model cannot yet be moved to a different camera without retraining. Only 1,832 of the 6,866 HPV-positive women had completed the protocol at the data freeze, and the number with high-grade disease is expected to more than quadruple by the end of the study, so all these percentages will move. Roughly a tenth of the high-grade cases were actual cancers, so this measures precancer detection, not lives saved. And the field's own history here is a warning: a celebrated 2019 paper from this same NCI group reported near-perfect accuracy for this idea, and in December 2025 its senior author, Mark Schiffman, published a letter in the same journal saying those results came from overfitting and urging readers to ignore them.",
+  "sources": [
+   {
+    "name": "Journal of the National Cancer Institute (October 2025) — peer-reviewed first results from the PAVE consortium, nine countries",
+    "url": "https://academic.oup.com/jnci/article/117/10/2124/8086524"
+   },
+   {
+    "name": "PubMed Central (2025) — free full text of the same JNCI paper, including the risk tables quoted here",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12505130/"
+   },
+   {
+    "name": "eLife (2024) — peer-reviewed PAVE study design paper, listing every country site and investigator",
+    "url": "https://elifesciences.org/articles/91469"
+   },
+   {
+    "name": "Journal of the National Cancer Institute (February 2026) — Mark Schiffman's own letter retracting the accuracy claims of the 2019 paper",
+    "url": "https://academic.oup.com/jnci/article/118/2/364/8379843"
+   },
+   {
+    "name": "World Health Organization — cervical cancer fact sheet, source of the 2024 case and death figures",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/cervical-cancer"
+   }
+  ]
+ },
+ {
   "id": "nick-wray",
   "cat": "abilities",
   "year": 2025,
