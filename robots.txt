@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://stories.rationaloptimistsociety.com/sitemap.xml
+Sitemap: https://paleofaire.github.io/ai-story-bank/sitemap.xml
