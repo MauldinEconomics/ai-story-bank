@@ -383,6 +383,37 @@
   ]
  },
  {
+  "id": "pakistan-mobile-xray-camps",
+  "cat": "early",
+  "year": 2025,
+  "place": "Karachi and 19 other districts, Pakistan",
+  "people": "Syed Mohammad Asad Zaidi of University College London and Community Health Solutions in Karachi; Saira Khowaja of the Indus Health Network; Aamir Khan of Interactive Research and Development; Jacob Creswell of the Stop TB Partnership; Andrew Copas and Hanif Esmail of University College London",
+  "title": "Software read 1.2 million chest X-rays in Pakistani roadside camps. 7,625 people started TB treatment.",
+  "hook": "Eleven thousand one-day camps over four years, and not one radiologist. The software was the only reader.",
+  "body": [
+   "A chest camp in Pakistan is a single day's work. A van parks up, loudspeakers announce it, fieldworkers walk the neighbourhood, and for four to six hours anyone who turns up gets a chest X-ray. Between the third quarter of 2017 and the second quarter of 2021, Community Health Solutions, a private organisation working as an implementing partner of Pakistan's National TB Programme, ran 11,327 of these camps across 20 districts. A third of them were in Karachi. Altogether 1,214,289 people were X-rayed.",
+   "Two things about how it worked. Nobody was asked about symptoms first: screening was symptom-agnostic by design, so people who felt perfectly well were X-rayed alongside people who were coughing. And no radiologist saw the images. Every one went to CAD4TB, made by Delft Imaging in the Netherlands, which returns a score from 0 to 100. Anyone above the cut-off was asked for a sputum sample. The programme began with a cut-off of 50 to catch as many cases as possible, then raised it to 60 in 2018, after consulting the national programme, because the lower setting was sending too many people for expensive molecular tests.",
+   "133,036 people, just under 11 percent of those screened, were flagged as possible TB. 105,976 got a sputum test. 7,625 were diagnosed with tuberculosis and started on treatment. Of those, 3,500, or 45.9 percent, had TB confirmed in a laboratory; the other 4,125 were treated on a doctor's judgement without a positive test. Nationally the camps found 289 lab-confirmed cases for every 100,000 people screened.",
+   "The most useful thing in the paper is how unevenly that worked. Depending on the district, yield ran from 70 to 678 lab-confirmed cases per 100,000 people screened. Same vans, same software, same cut-off, and close to a tenfold difference in how many people it found. The authors' conclusion is that programmes should point the vans at the places with the most TB rather than spreading them evenly, and that the empirical-treatment problem has to be fixed alongside any scale-up. They published the underlying dataset openly through University College London."
+  ],
+  "stat": {
+   "v": "1.21 million",
+   "l": "chest X-rays read by software rather than a radiologist in Pakistani screening camps over four years"
+  },
+  "why": "This is AI as the only reader of a medical image, at national-programme scale, for four years of routine work rather than a pilot. 7,625 people started tuberculosis treatment after software looked at their X-ray, and many of them had no symptoms to report.",
+  "caveat": "A retrospective analysis of aggregate camp-level data with no control group and no human-reader comparison, so it cannot show how many of the 7,625 a radiologist would also have found. The paper makes no claim that these camps raised Pakistan's national TB notifications, and that claim should not be made on its behalf. More than half the people treated, 4,125 of 7,625, never had TB confirmed in a laboratory; the authors flag this as a problem for programmes to fix, not as a win. Yield varied nearly tenfold between districts, so results here do not predict results elsewhere. Children under 15 and pregnant women were excluded under national guidelines. Funding came from the Global Fund and the Stop TB Partnership.",
+  "sources": [
+   {
+    "name": "BMJ Global Health (July 2025) — Zaidi, Creswell, Khowaja, Khan, Copas and Esmail, the peer-reviewed retrospective analysis with the full screening cascade and district-level yields",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12306258/"
+   },
+   {
+    "name": "PubMed record — citation, DOI and the authors' institutional affiliations",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40701613/"
+   }
+  ]
+ },
+ {
   "id": "alpha-homeschool",
   "cat": "learning",
   "year": 2025,
