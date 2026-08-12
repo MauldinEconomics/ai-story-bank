@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The AI Story Bank — 141 true stories of AI doing good</title>
-<meta name="description" content="141 fact-checked stories of artificial intelligence doing something genuinely good — curing disease, catching cancer early, restoring lost abilities, teaching children. Every story carries its primary sources and its honest limits.">
+<title>The AI Story Bank — 142 true stories of AI doing good</title>
+<meta name="description" content="142 fact-checked stories of artificial intelligence doing something genuinely good — curing disease, catching cancer early, restoring lost abilities, teaching children. Every story carries its primary sources and its honest limits.">
 <meta name="author" content="Rational Optimist Society">
 <meta name="theme-color" content="#0e0f12" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
@@ -10,16 +10,16 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rational Optimist Society">
 <meta property="og:title" content="The AI Story Bank">
-<meta property="og:description" content="141 true, sourced stories of AI doing something good. It happened. It's measured. It has receipts.">
+<meta property="og:description" content="142 true, sourced stories of AI doing something good. It happened. It's measured. It has receipts.">
 <meta property="og:url" content="https://stories.rationaloptimistsociety.com/">
 <meta property="og:image" content="https://stories.rationaloptimistsociety.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The AI Story Bank — 141 true stories of AI doing something good">
+<meta property="og:image:alt" content="The AI Story Bank — 142 true stories of AI doing something good">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The AI Story Bank">
-<meta name="twitter:description" content="141 true, sourced stories of AI doing something good. It happened. It's measured. It has receipts.">
+<meta name="twitter:description" content="142 true, sourced stories of AI doing something good. It happened. It's measured. It has receipts.">
 <meta name="twitter:image" content="https://stories.rationaloptimistsociety.com/og-image.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><circle cx=%2216%22 cy=%2216%22 r=%2213%22 fill=%22%23e0a422%22/></svg>">
 <style>
@@ -946,6 +946,41 @@ const STORIES = [
    {
     "name": "Waymo Safety Impact hub — methodology and peer-reviewed studies",
     "url": "https://waymo.com/safety/impact/"
+   }
+  ]
+ },
+ {
+  "id": "darpa-digital-tutor",
+  "cat": "learning",
+  "year": 2012,
+  "place": "United States",
+  "people": "J.D. Fletcher and John E. Morrison, Institute for Defense Analyses; Ralph Chatham, DARPA; US Navy Center for Information Dominance and Fleet System Engineering Teams",
+  "title": "A DARPA-funded tutor trained Navy IT recruits in 16 weeks to out-troubleshoot sailors with nine years at sea",
+  "hook": "The famous number is real. It is attached to the wrong comparison.",
+  "body": [
+   "In March and April 2012 the US Navy ran two week-long test sessions at its San Diego base. Three groups of twelve sailors sat the same exams. One group had spent 16 weeks with a computer program called the Digital Tutor, paid for by DARPA. One group had finished the Navy's own 35-week IT classroom course. The third group were working Fleet technicians with 4 to 15 years of service, averaging about nine and a half years. Their commands had picked them as the best people available in port, the shipboard go-to technicians. The test problems were real faults, pulled from a database of more than 20,000 trouble tickets that ships had sent ashore because nobody on board could fix them.",
+   "The Digital Tutor group won most of it. Working in teams of three across two and a half days, they solved 74 percent of the troubleshooting problems they attempted. The experienced Fleet teams solved 51 percent and the classroom teams 38 percent. Only the Digital Tutor teams attempted the problems rated very hard, and they solved three of the five. They also broke less on their way through. The chance that a Digital Tutor team left a harmful change behind in the system was 0.14, against 0.41 for the Fleet teams. The Fleet beat them at one thing. In a four-hour security exercise the Fleet teams found and fixed 69 percent of the planted security holes and the Digital Tutor teams found 44 percent. The evaluators blamed that on the one part of the course where no expert human tutor had been available.",
+   "People retelling this story usually say the recruits finished four standard deviations above sailors with ten years of experience. Sometimes they say eight. Both numbers appear in the published evaluation, in the same table. Neither is invented and neither is being quoted properly. In Table 7 of the 2014 report the troubleshooting effect size is 4.19 against the experienced Fleet technicians and 7.98 against the Navy's 35-week classroom course. So eight is not a bigger version of four. It is a different comparison, against a training course rather than against experienced people. Both figures also come from comparing four teams on each side, not individual sailors. The earlier 2012 report scored the identical exercise problem by problem instead of team by team, and reported 0.85 against the Fleet and 1.13 against the classroom course. Same sailors, same week, same answers. The headline number moves about fivefold depending on what the authors chose to count. The authors' own one-line summary of the whole programme was more careful than either version in circulation: effect sizes often well above two standard deviations.",
+   "The Digital Tutor was not machine learning and shared nothing with today's chatbots. Its evaluators describe the back end as classic knowledge engineering, meaning feature extraction, ontologies and an inference engine, hand-coded by expert programmers. It read typed answers using natural language processing but, the report states plainly, it did not attempt full natural language understanding. A component called the Recommender decided when to go and fetch a human mentor. Roughly half the programme's money went on finding 24 human experts and having them tutor the first intake one-to-one, so that their teaching could be recorded and copied into software. The claim that DARPA buried the result is false. The 2014 report is stamped approved for public release, distribution unlimited, and has sat in the Pentagon's own technical library since 2015."
+  ],
+  "stat": {
+   "v": "74% vs 51%",
+   "l": "share of real ship faults solved — Digital Tutor teams, then hand-picked Fleet technicians averaging 9.6 years at sea"
+  },
+  "why": "It is the best evidence anyone has that deep technical skill can be built in months rather than years, and it was done with 2000s-era symbolic AI, not modern models. It is also a lesson in how a real finding gets distorted: the number survived the retelling but the comparison group did not.",
+  "caveat": "Small and fragile. Twelve people per group, and the headline troubleshooting effect sizes rest on four teams per side, six degrees of freedom. Scoring the same data per problem gives 0.85 rather than 4.19 against the Fleet group. Blinding was partial. The review board could not tell Digital Tutor graduates from classroom graduates, but the Fleet veterans were obvious from their age and rank, and the hands-on scoring was not blinded. The Fleet group was hand-picked for being unusually good, which makes the win harder to explain away, but they were tested on material the tutor was purpose-built to teach, drawn from the same trouble-ticket database used to design it. IDA described itself as an impartial third party, and for the 2012 report it was working under contract to DARPA, the programme's own sponsor. The Fleet group's mean experience is given as 9.1 years in one report and 9.6 in the other, so ten years is rounded up. The tutor was never scaled. Its evaluators noted it was expensive to build and to run, that content had to be coded by expert programmers rather than teachers, and that further funding would have to come from outside research budgets. The widely repeated claim that ten years of experience reduces to about 40 scenarios appears nowhere in these reports. The only 40 in them is the roughly 40 candidate training domains DARPA surveyed before choosing Navy IT.",
+  "sources": [
+   {
+    "name": "Institute for Defense Analyses, Document D-5358 (November 2014) — Fletcher & Morrison, 'Accelerating Development of Expertise: A Digital Tutor for Navy Technical Training', the public-release evaluation; Table 7 carries the 4.19 and 7.98 effect sizes",
+    "url": "https://archive.org/download/DTIC_AD1002362/DTIC_AD1002362.pdf"
+   },
+   {
+    "name": "Defense Technical Information Center record AD1002362 — catalogue entry for IDA D-5358, showing the approved-for-public-release status",
+    "url": "https://archive.org/details/DTIC_AD1002362"
+   },
+   {
+    "name": "Institute for Defense Analyses, Document D-4686 (Sep 2012) — Morrison & Fletcher, 'DARPA Digital Tutor: Assessment Data'; Table 9 carries the per-problem effect sizes of 0.85 and 1.13. Hosted on the developer's own site because the Pentagon's library blocks automated access — the file carries IDA's cover pages, IDA copyright and the DARPA contract number",
+    "url": "https://www.acuitus.com/s/D4686-DF.pdf"
    }
   ]
  },
