@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The AI Story Bank — 140 true stories of AI doing good</title>
-<meta name="description" content="140 fact-checked stories of artificial intelligence doing something genuinely good — curing disease, catching cancer early, restoring lost abilities, teaching children. Every story carries its primary sources and its honest limits.">
+<title>The AI Story Bank — 141 true stories of AI doing good</title>
+<meta name="description" content="141 fact-checked stories of artificial intelligence doing something genuinely good — curing disease, catching cancer early, restoring lost abilities, teaching children. Every story carries its primary sources and its honest limits.">
 <meta name="author" content="Rational Optimist Society">
 <meta name="theme-color" content="#0e0f12" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
@@ -10,16 +10,16 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rational Optimist Society">
 <meta property="og:title" content="The AI Story Bank">
-<meta property="og:description" content="140 true, sourced stories of AI doing something good. It happened. It's measured. It has receipts.">
+<meta property="og:description" content="141 true, sourced stories of AI doing something good. It happened. It's measured. It has receipts.">
 <meta property="og:url" content="https://stories.rationaloptimistsociety.com/">
 <meta property="og:image" content="https://stories.rationaloptimistsociety.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The AI Story Bank — 140 true stories of AI doing something good">
+<meta property="og:image:alt" content="The AI Story Bank — 141 true stories of AI doing something good">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The AI Story Bank">
-<meta name="twitter:description" content="140 true, sourced stories of AI doing something good. It happened. It's measured. It has receipts.">
+<meta name="twitter:description" content="141 true, sourced stories of AI doing something good. It happened. It's measured. It has receipts.">
 <meta name="twitter:image" content="https://stories.rationaloptimistsociety.com/og-image.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><circle cx=%2216%22 cy=%2216%22 r=%2213%22 fill=%22%23e0a422%22/></svg>">
 <style>
@@ -694,6 +694,53 @@ const STORIES = [
    {
     "name": "AFP via Gulf News (Aug 2025)",
     "url": "https://gulfnews.com/world/europe/ai-helps-uk-woman-rediscover-lost-voice-after-25-years-2-1.500242008"
+   }
+  ]
+ },
+ {
+  "id": "echonext-transplant",
+  "cat": "early",
+  "year": 2026,
+  "place": "NewYork-Presbyterian and Columbia University, New York City",
+  "people": "Dr. Pierre Elias, Dr. Timothy Poterucha and Holly Hartman, with colleagues at Columbia and NewYork-Presbyterian",
+  "title": "He arrived short of breath with a clean chest X-ray. The AI read his ECG and found a failing heart.",
+  "hook": "An ECG costs almost nothing. Nobody knew it held this much.",
+  "body": [
+   "Structural heart disease means something wrong with the heart's physical machinery — the valves, the walls, the chambers. It is common, it is treatable, and it gets missed constantly, because the test that finds it is an ultrasound of the heart: costly, slow, and not available everywhere. The cardiologist who led this work puts the gap plainly. We have colonoscopies and we have mammograms, he says, but there is no equivalent screen for most heart disease.",
+   "An ECG is the opposite: ten electrodes, a squiggle on paper, done in almost every clinic on earth for the price of nothing. A team at Columbia and NewYork-Presbyterian trained a model called EchoNext on 1.2 million ECGs paired with the ultrasound results from the same patients — 230,018 people across eight hospitals — to learn what a failing heart looks like in a trace a human reads as unremarkable. Then they put it against 13 cardiologists on the same 3,200 ECGs. The cardiologists correctly spotted 64% of the structural disease. EchoNext got 77%.",
+   "In July 2026 the team published a single case in Nature Medicine. A 45-year-old man came into an emergency department after four days of worsening breathlessness and a cough, having recently been in wildfire smoke. His chest X-ray was clean. His bloods were normal except for a slightly raised marker of heart injury. EchoNext flagged his ECG. The tests that followed found advanced cardiomyopathy — a badly weakened heart muscle. Drug treatment did not hold him. He needed a temporary mechanical pump, and about six months after diagnosis he received a heart transplant.",
+   "The screening result is the part that scales. Among roughly 85,000 patients who had an ECG but had never had a heart ultrasound, EchoNext flagged 9% as high risk. Of those who went on to be scanned, about 73% did have structural heart disease — roughly double the rate that population would otherwise show. It cleared the US Food and Drug Administration in July 2026, the first AI tool cleared to detect six kinds of structural heart disease from a standard 12-lead ECG, and it is being offered to clinicians free."
+  ],
+  "stat": {
+   "v": "77% vs 64%",
+   "l": "structural heart disease correctly spotted — the AI, then 13 cardiologists reading the same 3,200 ECGs"
+  },
+  "why": "Heart disease has no mammogram. This turns the cheapest and most widespread test in medicine into a way of deciding who needs the expensive one, which is the only shape a heart screen could realistically take for people who would otherwise never be scanned at all.",
+  "caveat": "The transplant is one patient, written up as a two-page case report by the same people who built the tool. It is not evidence the AI saved him: he walked into an emergency department with symptoms and an abnormal cardiac marker, so he was already being investigated, and nobody can say what would have happened without the flag. We also could not find a primary source for the widely repeated line that this is the 'first documented case' of its kind — treat that as newsletter framing, not a published claim. On the headline comparison: it was done on stored ECGs in a study setting rather than live clinic conditions, and when those same cardiologists were given AI assistance they reached 69%, so the gap narrows when human and model work together. The screening arm carries the adoption problem this bank keeps running into — only 55% of the patients EchoNext flagged actually got a scan. And a 9% flag rate across 85,000 people means over 7,500 extra ultrasound referrals, a real capacity cost somebody has to absorb. Finally, it is cleared, not approved: FDA clearance is a lower bar, and the tool is authorised to say 'scan this person', not to diagnose anyone. The authors disclose patent applications, stock holdings and consulting arrangements; the work was funded in part by the NIH.",
+  "sources": [
+   {
+    "name": "Nature (Aug 2025) — 'Detecting structural heart disease from electrocardiograms using AI', the main study",
+    "url": "https://www.nature.com/articles/s41586-025-09227-0"
+   },
+   {
+    "name": "PubMed (Jul 2025) — abstract and full author list for the Nature study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40670798/"
+   },
+   {
+    "name": "Nature Medicine (Jul 2026) — the transplant case report",
+    "url": "https://www.nature.com/articles/s41591-026-04454-y"
+   },
+   {
+    "name": "PubMed (Jul 2026) — citation for the case report",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42332144/"
+   },
+   {
+    "name": "NewYork-Presbyterian (Jul 2026) — the FDA clearance announcement",
+    "url": "https://www.nyp.org/advances/article/cardiology/ai-model-echonext-receives-fda-clearance-to-aid-early-detection-of-structural-heart-disease"
+   },
+   {
+    "name": "Columbia University Irving Medical Center — head-to-head and prospective screening figures",
+    "url": "https://www.cuimc.columbia.edu/news/can-ai-detect-hidden-heart-disease"
    }
   ]
  },
