@@ -1,0 +1,9 @@
+# Scratch files agents sometimes drop here while researching. Never publish these.
+bing.html
+ddg.html
+google.html
+proof.html
+*.search.html
+*.tmp
+*.bak-*
+.DS_Store
