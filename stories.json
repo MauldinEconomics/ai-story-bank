@@ -510,44 +510,6 @@
   ]
  },
  {
-  "id": "zipline-rwanda",
-  "cat": "planet",
-  "year": 2026,
-  "place": "Rwanda, Ghana and beyond",
-  "people": "Zipline; the Government of Rwanda",
-  "title": "Drones carry 75% of Rwanda's blood — and mothers stopped dying of haemorrhage",
-  "hook": "A 51% fall in deaths from postpartum bleeding, measured in a peer-reviewed study.",
-  "body": [
-   "Rwanda's autonomous drones now deliver about 75% of the country's blood supply outside the capital. Zipline has crossed 140 million commercial autonomous miles and roughly 2.5 million deliveries with no reported safety incident.",
-   "The result that matters was measured independently and published in a peer-reviewed operations journal in 2026: at hospitals served by drone delivery, in-hospital deaths of mothers suffering postpartum haemorrhage fell 51%. Deaths among trauma patients fell 30%. Bleeding to death after childbirth is one of the great killers of women, and the reason is usually not medicine but logistics — the blood is somewhere else.",
-   "A separate working paper found sharp falls in severe child malnutrition where drones delivered therapeutic food, by up to 84% in older children. In November 2025 a $150 million US State Department agreement began tripling coverage from 5,000 to 15,000 health facilities."
-  ],
-  "stat": {
-   "v": "51%",
-   "l": "fall in deaths from postpartum haemorrhage at drone-served hospitals"
-  },
-  "why": "Mothers bleed to death because blood is in the wrong place, not because medicine lacks an answer. This is the least glamorous and most transferable fix in global health.",
-  "caveat": "Correcting two numbers that circulate widely, including in our own first draft: the maternal figure is 51%, not 88%, and the malnutrition figure is up to 84%, not 89% — and that one is a working paper, not peer-reviewed. Mileage, delivery counts and the blood-supply share are Zipline's own figures with no independent audit. One more distinction worth making, because we went looking and could not support the looser version: the achievement here is autonomous flight and logistics, not machine learning. Zipline's own technology pages make no AI or computer-vision claim, and the lives saved were saved by getting blood to the right place in time. We have also removed a widely shared account of a four-year-old Ghanaian girl saved by an antivenom flight — the delivery number attached to it appears nowhere, and its 45-minute survival window contradicts Zipline's own statement that antivenom works within six hours.",
-  "sources": [
-   {
-    "name": "Manufacturing & Service Operations Management (Jun 2026) — the peer-reviewed blood-delivery study, via Penn Today",
-    "url": "https://penntoday.upenn.edu/news/penn-wharton-how-rwanda-using-drones-improve-healthcare"
-   },
-   {
-    "name": "Zipline — 'Preventing maternal deaths through faster blood delivery'",
-    "url": "https://www.zipline.com/newsroom/preventing-maternal-deaths-through-faster-blood-delivery"
-   },
-   {
-    "name": "Zipline — research on impact beyond healthcare",
-    "url": "https://www.zipline.com/newsroom/visible-from-space-new-research-on-zipline-s-impact-in-africa-beyond-healthcare"
-   },
-   {
-    "name": "TechCrunch (Jan 2026) — delivery totals and funding",
-    "url": "https://techcrunch.com/2026/01/21/zipline-charts-drone-delivery-expansion-with-600m-in-new-funding/"
-   }
-  ]
- },
- {
   "id": "mayo-pancreatic",
   "cat": "early",
   "year": 2026,
@@ -3136,41 +3098,6 @@
   ]
  },
  {
-  "id": "monviso-search",
-  "cat": "planet",
-  "year": 2025,
-  "place": "Monviso, Cottian Alps, Italy",
-  "people": "Nicola Ivaldo; Italy's National Alpine and Speleological Rescue Corps",
-  "title": "A single cluster of red pixels ended a ten-month search",
-  "hook": "183 hectares of near-vertical rock that rescuers cannot safely walk.",
-  "body": [
-   "In September 2024 Nicola Ivaldo, a 64-year-old orthopaedic surgeon, went climbing alone on Monviso and did not come home. Rescuers searched for three weeks with helicopters, dogs and drones, then stopped when the snow came. The obstacle was the mountain itself: 183 hectares of near-vertical rock and hanging glacier that people cannot safely cross on foot.",
-   "In July 2025 the rescue service sent drones instead. Five hours of flying at about 50 metres produced roughly 2,600 photographs. Free open-source software scanned all of them in a single afternoon and flagged a small cluster of red pixels that matched neither grey rock nor white snow.",
-   "It was his climbing helmet, still on his head. Rescuers recovered him two days later at 3,150 metres.",
-   "He was not found alive, and it matters to say so. What his family got was an end to not knowing. What everyone else got is the knowledge that cheap drones and free software can search ground that would kill the people sent into it — and review in one afternoon what took three weeks to fail at."
-  ],
-  "stat": {
-   "v": "2,600",
-   "l": "drone photographs reviewed in a single afternoon, finding what three weeks of searching missed"
-  },
-  "why": "Run sooner, this same method reaches someone who is still alive. That is the whole argument for putting it in every mountain rescue service's kit.",
-  "caveat": "This was a body recovery, not a rescue — headlines suggesting otherwise are wrong. The software is largely colour-and-shape anomaly detection rather than sophisticated AI, and the claim that manual review would have taken weeks is a rescuer's estimate, not a measured comparison. One case, not an evaluated success rate.",
-  "sources": [
-   {
-    "name": "Texas Search and Rescue (Aug 2025) — the tool's developers on the Italian search",
-    "url": "https://www.texsar.org/2025/08/15/adiat-helps-italian-sar-team/"
-   },
-   {
-    "name": "Explorersweb (Aug 2025)",
-    "url": "https://explorersweb.com/ai-solves-the-mystery-of-missing-italian-climber/"
-   },
-   {
-    "name": "Fox News (Aug 2025)",
-    "url": "https://www.foxnews.com/tech/ai-drone-finds-missing-hikers-remains-mountains-after-10-months"
-   }
-  ]
- },
- {
   "id": "zanskar",
   "cat": "planet",
   "year": 2025,
@@ -4637,40 +4564,6 @@
    {
     "name": "Yamagata University (Sep 2024)",
     "url": "https://www.yamagata-u.ac.jp/en/information/info/20240924/"
-   }
-  ]
- },
- {
-  "id": "silk-road-cities",
-  "cat": "science",
-  "year": 2024,
-  "place": "Malguzar mountains, southeastern Uzbekistan",
-  "people": "Michael Frachetti, Washington University in St Louis; Farhod Maksudov, National Center of Archaeology of Uzbekistan",
-  "title": "Two cities were hiding two kilometres up an Uzbek mountain",
-  "hook": "Historians assumed the Silk Road's mountains were empty country you hurried through.",
-  "body": [
-   "The Silk Road story has always belonged to lowland trading cities, with the mountains treated as empty country you crossed as fast as you could. Drones flying low over two Uzbek hillsides fired laser pulses at the ground, building a centimetre-scale 3D model that stripped away grass and rubble.",
-   "Algorithms then traced millions of faint lines in that model, working out which bumps were collapsed walls and how they aligned. Two buried settlements emerged, 2,000 to 2,200 metres up: one about 12 hectares, the other roughly 120 — the size of a real city. Digging at one fortified structure found rammed-earth walls three metres thick, and signs the place may have been making steel.",
-   "They were occupied between the 6th and 11th centuries. Which means the Silk Road did not just pass through these mountains. It lived in them."
-  ],
-  "stat": {
-   "v": "120 ha",
-   "l": "the larger buried city, mapped 2km up in country long assumed to be empty"
-  },
-  "why": "It changes who the Silk Road belonged to — not only merchants crossing lowland oases, but mountain communities large enough to be industrial centres.",
-  "caveat": "Credit the lasers first and the algorithms second. The finding was made by drone lidar; machine learning was an assistive step that traced architectural alignments in the resulting model. 'AI found a lost city' overstates the software's role. Excavation so far covers one structure, so most of the mapped city is unconfirmed on the ground. Worth contrasting with our Nazca entry, where a deep-learning classifier genuinely did the finding — AI does not work the same way in each.",
-  "sources": [
-   {
-    "name": "Nature (Oct 2024) — 'Large-scale medieval urbanism traced by UAV-lidar in highland Central Asia'",
-    "url": "https://www.nature.com/articles/s41586-024-08086-5"
-   },
-   {
-    "name": "Washington University in St Louis — methods, site sizes and excavation",
-    "url": "https://artsci.washu.edu/ampersand/high-res-lidar-exposes-large-high-elevation-cities-along-asia%E2%80%99s-silk-roads"
-   },
-   {
-    "name": "Phys.org (Oct 2024)",
-    "url": "https://phys.org/news/2024-10-high-res-lidar-exposes-large.html"
    }
   ]
  },
