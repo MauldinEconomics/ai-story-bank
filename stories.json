@@ -239,6 +239,37 @@
   ]
  },
  {
+  "id": "saruav-cergowa",
+  "cat": "planet",
+  "year": 2021,
+  "place": "Cergowa, Beskid Niski, Poland",
+  "people": "Bieszczady Mountain Rescue Service (GOPR); Tomasz Niedzielski and colleagues, University of Wroclaw and SARUAV Ltd",
+  "title": "The thermal camera missed him. A neural network found him in an ordinary drone photo, alive.",
+  "hook": "He had a stroke the day before, and his family said he could not stand up again if he fell.",
+  "body": [
+   "On the afternoon of 28 June 2021 a 65-year-old man walked out of his house in Cergowa, a village in south-east Poland. He had Alzheimer's disease. He had suffered a stroke the previous day and had trouble walking. At 11:30 that night his family reported that they had not heard from him.",
+   "Seventeen mountain rescuers, police, volunteer firefighters, quad bikes and a search dog worked through the night. A drone with a thermal camera went up around 3am and an analyst watched its imagery for hours. It found nothing. The next day the drone flew again with an ordinary colour camera, this time in a survey grid: 910 overlapping photographs covering about 100 hectares of meadow, bushes, deep valleys and forest.",
+   "Seven hundred and eighty-two of those photographs, from four of the flights, went into a laptop running SARUAV, a program from the University of Wroclaw built on a convolutional neural network, the same family of image-recognition model that picks faces out of a phone's photo library. It was trained on aerial pictures of people across different seasons, land covers, times of day and clothing colours, including camouflage. It cuts each photo into squares and flags the ones that look like a person. The flight he was actually in held 121 photos. Upload, scan and human checking of the flagged squares took 5 minutes and 48 seconds. He appeared in three photographs and the software caught all three.",
+   "The coordinates went out at 18:21. Rescuers set off at 18:25 and reached him at 18:30. He had been outside for more than 24 hours and needed only minor medical help. The authors point out that in a study of people with Alzheimer's who went missing in Virginia, 46% of those still missing after 24 hours were dead when searchers arrived. This was the first time in the scientific literature that an automatic human detector found a missing person in a real search and the person lived."
+  ],
+  "stat": {
+   "v": "5 min 48 sec",
+   "l": "to upload, scan and check the 121 photographs from the flight he turned out to be in"
+  },
+  "why": "Wandering is one of the commonest emergencies in dementia care and the clock is the entire problem. Flying a drone over the search area is easy. Having someone look at every photograph before dark is not.",
+  "caveat": "This is one case, and two of the authors work for the company that sells the software, which the paper discloses. The authors say plainly that nobody can know how the search would have ended without it. Thermal imaging failed here but often works better, and the software needs daylight, open terrain and specific flight settings. It produces false alarms that a human must sort through, and the developers' own tests put detection at 86% to 100% of people found in at least one photo, not every photo. The second confirmed detection by the system, in South Tyrol in 2024, found someone who had already died.",
+  "sources": [
+   {
+    "name": "Remote Sensing (Dec 2021) — 'First Successful Rescue of a Lost Person Using the Human Detection System', the peer-reviewed case report. The publisher blocks automated link-checkers, so we also list the university's own account below",
+    "url": "https://doi.org/10.3390/rs13234903"
+   },
+   {
+    "name": "University of Wroclaw (Aug 2024) — the team's own account, and the second confirmed detection, which found someone already dead",
+    "url": "https://uwr.edu.pl/en/another-missing-person-found-using-the-saruav-system/"
+   }
+  ]
+ },
+ {
   "id": "nobel-2024",
   "cat": "science",
   "year": 2024,
@@ -939,6 +970,37 @@
    {
     "name": "Core Memory — Ashlee Vance on the case",
     "url": "https://www.corememory.com/p/the-aussie-man-who-used-ai-to-create-cancer-therapy-dog-rosie"
+   }
+  ]
+ },
+ {
+  "id": "mpact-spinal-fluid",
+  "cat": "early",
+  "year": 2026,
+  "place": "Memphis, Tennessee, with Heidelberg and Vienna",
+  "people": "Kyle Smith, Katie Han, Tom Fischer and Paul Northcott at St. Jude Children's Research Hospital, with the Hopp Children's Cancer Center in Heidelberg and the Medical University of Vienna",
+  "title": "A neural network named a child's brain tumour type from half a nanogram of DNA floating in spinal fluid",
+  "hook": "The tumour is in the brain. The answer was in the fluid around it.",
+  "body": [
+   "Treating a child's brain tumour depends on knowing exactly which tumour it is. Two growths that look the same on a scan can need different chemotherapy, different radiation and carry completely different odds. Getting that answer normally means getting a piece of the tumour. For growths sitting deep in the brain or in the brainstem, that can mean dangerous surgery, and sometimes surgery nobody is willing to do.",
+   "Tumours shed DNA. Some of it drifts into cerebrospinal fluid, the clear liquid around the brain and spine, which is drawn with a needle in the lower back. Children with brain tumours often have this done anyway, to check whether the cancer has spread. The problem is how little DNA is in there. Fractions of a nanogram, which is a billionth of a gram.",
+   "A team led by Paul Northcott at St. Jude, with groups in Heidelberg, Vienna, Tampere, Amsterdam and Kiel, built a deep neural network called M-PACT. It ignores mutations. Instead it reads DNA methylation, the chemical tags that mark which genes a cell has switched on and off, and which differ sharply from one tumour type to another. It was trained on 5,014 methylation profiles covering roughly 100 kinds of central nervous system tumour, plus blood and immune cells so it can separate tumour signal from background noise. Given real spinal fluid from 79 children with embryonal brain tumours, the family that includes medulloblastoma and ATRT, it named the correct tumour type 92% of the time, working from a median of half a nanogram of DNA. On a separate set of 58 samples from 48 children it was right 88% of the time.",
+   "The paper also shows it doing things a one-off tissue biopsy cannot. Because the fluid can be sampled again, the same test can track whether a tumour is responding during treatment. And it can tell a relapse of the original cancer apart from a brand new second tumour, which is a distinction that changes what doctors do next."
+  ],
+  "stat": {
+   "v": "92%",
+   "l": "of 79 children's spinal-fluid samples, how often the network named the correct brain tumour type"
+  },
+  "why": "A lumbar puncture is not nothing, but it is not brain surgery. If this holds up, some children could get a precise diagnosis, and repeated checks during treatment, without anyone opening the skull.",
+  "caveat": "This is a validation study, not clinical care. The authors write that validation in prospective clinical trials is warranted before it guides decisions. The headline accuracy numbers cover embryonal tumours specifically, not all childhood brain tumours; other types are shown but on smaller numbers. The method needs a sample where roughly 5 to 10% of the DNA came from the tumour, so it fails on tumours that shed little. It cannot see gene-level mutations, which some treatment choices depend on. The authors call their own intraoperative spinal-fluid numbers modest. No child's treatment has yet been changed by it in a trial.",
+  "sources": [
+   {
+    "name": "Nature Cancer (February 2026) — 'M-PACT leverages cell-free DNA methylomes to achieve robust classification of pediatric brain tumors', open-access copy via PubMed Central because nature.com redirects automated fetches to authentication",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13128451/"
+   },
+   {
+    "name": "St. Jude Children's Research Hospital (February 2026) — the hospital's own announcement, self-reported",
+    "url": "https://www.stjude.org/media-resources/news-releases/2026-medicine-science-news/classifying-pediatric-brain-tumors-by-liquid-biopsy-using-artificial-intelligence.html"
    }
   ]
  },
