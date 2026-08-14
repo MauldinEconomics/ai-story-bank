@@ -445,6 +445,65 @@
   ]
  },
  {
+  "id": "prior-auth-appeals-ai",
+  "cat": "planet",
+  "year": 2024,
+  "place": "Oakbrook Terrace, Illinois",
+  "people": "Dr. Azlan Tariq, rehabilitation physician; Dr. Michael Albert, obesity medicine, Oklahoma; Dr. Robert Wachter, UCSF; the estate of Gene B. Lokken and seven co-plaintiffs; UnitedHealth Group and naviHealth; the US Senate Permanent Subcommittee on Investigations",
+  "title": "Doctors started using AI to fight insurance denials, and found the insurers had been using AI to make them",
+  "hook": "He spent seven hours of every week arguing with insurance companies. Then he handed the arguing to a chatbot.",
+  "body": [
+   "Azlan Tariq is a rehabilitation doctor in the western suburbs of Chicago. His patients need prosthetic limbs, wheelchairs, and rehab after strokes. For twelve years, about seven hours of his working week went on arguing with insurers over whether they would pay. One patient, a 45-year-old man, sat in a wheelchair for five months while his insurer denied appeal after appeal for a prosthetic leg. A stroke survivor was sent home because his insurer decided the rehab could be done there. He fell, and went back into hospital.",
+   "Tariq began drafting his appeal letters with Doximity GPT, a chatbot built for doctors. He feeds it the patient's records and the insurer's own written coverage rules, and it produces a letter in seconds. He told New York Times reporter Teddy Rosenbluth that it halved the time he spent on paperwork, and that the share of his requests insurers approved rose from about 10% to about 90%. In Oklahoma, obesity doctor Michael Albert said his small telehealth practice went from almost never appealing a denial to filing 10 to 20 appeals a week. \"This is finally a tool I can use to fight back,\" Tariq said.",
+   "The insurers got there first. In October 2024, a US Senate subcommittee reported that UnitedHealthcare's denial rate for care after a hospital stay climbed from 8.7% in 2019 to 22.7% in 2022, alongside growing use of algorithmic tools. A class action in Minnesota federal court, brought by the family of Gene Lokken and seven others, alleges that UnitedHealth used a model called nH Predict to cut off nursing-home and rehab care for elderly patients, and kept using it because almost nobody appeals. In February 2025 a judge dismissed five of the seven claims and let the two contract claims go forward. Nothing has been proved. Robert Wachter, who chairs the medicine department at UCSF, told the Times he expects an arms race, with each side's AI answering the other's.",
+   "One set of numbers explains why any of this matters. In 2024, Medicare Advantage insurers made 52.8 million prior-authorization decisions and denied 4.1 million of them. Patients or their doctors appealed just 11.5% of those denials. Of the appeals, 80.7% were overturned. For long-term acute care hospitals the denial rate was 65%; for skilled nursing homes, when denials were appealed, about 95% were approved in the end. So most denials stand not because they were right, but because nobody fought them, and fighting costs hours a doctor does not have. That cost is the thing the software removes. In September 2024 California made it law that an algorithm cannot be the sole basis for refusing care, and that a licensed human has to make the call."
+  ],
+  "stat": {
+   "v": "80.7%",
+   "l": "of appealed Medicare Advantage denials were overturned in 2024. Only 11.5% of denials were appealed at all."
+  },
+  "why": "The insurance appeal is the fight most Americans never start, because it costs hours they do not have, in a system where starting it usually works. This is a rare case of AI lowering the cost of pushing back for ordinary people rather than raising it.",
+  "caveat": "The eye-catching number here is the weakest thing in the story. Tariq's 10%-to-90% jump is his own recollection given to a reporter. It was not audited, and no published study anywhere has measured whether AI-written appeals actually get approved more often. The two peer-reviewed evaluations of AI-generated prior-authorization letters, in nephrology and in radiology, score the letters' quality and never see an insurer's decision. On the other side, the \"90% error rate\" attributed to nH Predict is a plaintiffs' allegation inferred from how often appealed denials get reversed, not an audit of the model, and most of that lawsuit was dismissed. The complaint's claim that only about 0.2% of patients appeal is also an allegation, and it sits far below the 11.5% measured in Medicare Advantage data; the two are counting different things. Doximity's HIPAA-compliance claim is the company's own, and it does not disclose which language model powers the tool.",
+  "sources": [
+   {
+    "name": "The New York Times (Jul 2024) — Teddy Rosenbluth's original report, \"In Constant Battle With Insurers, Doctors Reach for a Cudgel: A.I.\"",
+    "url": "https://www.nytimes.com/2024/07/10/health/doctors-insurers-artificial-intelligence.html"
+   },
+   {
+    "name": "KFF (Jan 2026) — analysis of CMS Medicare Advantage prior-authorization data for 2024: 52.8m determinations, 4.1m denied, 11.5% appealed, 80.7% overturned",
+    "url": "https://www.kff.org/medicare/nearly-50-million-prior-authorization-requests-were-sent-to-medicare-advantage-insurers-in-2023/"
+   },
+   {
+    "name": "KFF (Jul 2026) — post-acute care denial rates: 65% for long-term acute care hospitals, 54% for inpatient rehab, against an overall rate under 8%",
+    "url": "https://www.kff.org/medicare/medicare-advantage-insurers-deny-prior-authorization-requests-for-post-acute-care-at-substantially-higher-rates-than-the-overall-denial-rate/"
+   },
+   {
+    "name": "US District Court, District of Minnesota (Apr 2024) — first amended class action complaint, Estate of Gene B. Lokken v. UnitedHealth Group, No. 23-cv-3514, alleging use of the nH Predict model",
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.211721/gov.uscourts.mnd.211721.34.0.pdf"
+   },
+   {
+    "name": "US District Court, District of Minnesota (Feb 2025) — Judge John Tunheim's order dismissing five of seven claims and allowing the two contract claims to proceed",
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.211721/gov.uscourts.mnd.211721.91.0_2.pdf"
+   },
+   {
+    "name": "HHS Office of Inspector General (Apr 2022) — audit OEI-09-18-00260 finding 13% of denied prior-authorization requests actually met Medicare coverage rules",
+    "url": "https://oig.hhs.gov/oei/reports/OEI-09-18-00260.asp"
+   },
+   {
+    "name": "Healthcare Dive (Oct 2024) — Susanna Vogel on the Senate Permanent Subcommittee on Investigations report and the UnitedHealthcare denial-rate figures",
+    "url": "https://www.healthcaredive.com/news/medicare-advantage-AI-denials-cvs-humana-unitedhealthcare-senate-report/730383/"
+   },
+   {
+    "name": "California Legislature (Sep 2024) — SB 1120 as chaptered, barring an algorithm from being the sole basis for denying, delaying or modifying care",
+    "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB1120"
+   },
+   {
+    "name": "Frontiers in Digital Health (2026) — quality assessment of LLM-generated prior-authorization letters in nephrology, which scores letters and not insurer decisions",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41852493/"
+   }
+  ]
+ },
+ {
   "id": "alpha-homeschool",
   "cat": "learning",
   "year": 2025,
@@ -1218,6 +1277,61 @@
    {
     "name": "Modern Machine Shop (August 2015) - Derek Korn's report on the Top Shops benchmarking survey of 277 machine shops, giving median spindle utilisation of 75% for top shops and 65% for others; used here to show the 20-30% industry baseline is unsupported",
     "url": "https://www.mmsonline.com/articles/best-practices-of-top-us-shops"
+   }
+  ]
+ },
+ {
+  "id": "mammography-cad-failure",
+  "cat": "early",
+  "year": 2015,
+  "place": "United States",
+  "people": "R2 Technology, which built the first approved system; Joshua Fenton and colleagues at UC Davis; Constance Lehman and colleagues in the Breast Cancer Surveillance Consortium; Peter Taylor and colleagues at University College London; Andrey Povyakalo and colleagues at City, University of London",
+  "title": "America read most of its mammograms with an early AI for two decades, and it found no extra cancer",
+  "hook": "It was approved in 1998. It took seventeen years and 625,000 mammograms to prove it did not work.",
+  "body": [
+   "In June 1998 the FDA approved the first computer system allowed to mark up an American mammogram. It was called ImageChecker, built by R2 Technology, and it was genuinely machine learning, not a gimmick. The software first measured hand-picked features of the image, the bright flecks that signal microcalcifications and the shapes that signal masses, then fed those measurements to an artificial neural network that had been trained on hundreds of mammograms with the answers attached. A trade report at the time described the network learning to generalise from known cancer cases. This is what machine learning looked like before deep learning: humans chose what to measure, and a trained network decided what the measurements meant. Radiologists read the film first, then looked at the computer's marks.",
+   "It spread fast, because Medicare paid extra for it. By 2008, computer-aided detection was used on 74% of all screening mammograms billed to Medicare, up from about 39% four years earlier. Then the evidence arrived and it was bad. In 2007 Joshua Fenton and colleagues published a study in the New England Journal of Medicine covering 429,345 mammograms from 222,135 women at 43 facilities between 1998 and 2002. Seven of those facilities had adopted the software. At those seven, specificity fell from 90.2% to 87.2%, meaning more healthy women were flagged. The biopsy rate rose 19.7%. The cancer detection rate did not move.",
+   "That could have been a fluke of seven clinics, so the studies got bigger. In 2011 the same group covered more than 1.6 million mammograms from 684,956 women and found the same thing: worse specificity, no more cancer found. The decisive study came in 2015, when Constance Lehman and colleagues published in JAMA Internal Medicine on 625,625 digital mammograms read by 271 radiologists at 66 facilities. Sensitivity was 85.3% with the software and 87.3% without it. Cancers found per thousand women screened: 4.1 with, 4.1 without. Seventeen years after approval, on the largest dataset anyone had assembled, the machine had added nothing.",
+   "There is a subtler finding worth sitting with. When British researchers tested ImageChecker on 50 film readers in 2004, it flagged 90% of the cancers that humans had already caught, but only 40% of the interval cancers, the ones humans had missed. It was best at agreeing and worst at helping. A 2013 reanalysis of that same data separated readers by skill and found the six sharpest radiologists got measurably worse on the fifteen hardest cancers when the computer was on, losing about 15 percentage points of sensitivity, while weaker readers gained slightly on easy ones. The prompts pulled attention toward what the machine had already found. It ended quietly through the billing code. The separate add-on payment for mammography CAD disappeared on 1 January 2017, when the code was deleted and the function folded into the ordinary mammography fee, and Medicare completed the switch to the new bundled codes on 1 January 2018. No recall, no scandal. The money simply stopped."
+  ],
+  "stat": {
+   "v": "4.1 vs 4.1",
+   "l": "cancers found per 1,000 women screened, with the software and without it"
+  },
+  "why": "This is the control group for every claim now being made about AI in medicine. An FDA-approved learning system reached three quarters of American screening mammograms and stayed there for a decade before large studies established it was not helping. Today's deep-learning mammography systems look genuinely better in randomised trials, which is exactly why the question to ask them is the one nobody asked in 1998.",
+  "caveat": "Read this as a failure of evidence, not proof that machines cannot read mammograms. The big studies here are observational comparisons of facilities and readers, not randomised trials, so unmeasured differences between clinics could contribute; the researchers adjusted for what they could measure. The 74% figure is Medicare fee-for-service billing in 2008, not all American mammograms in 2010. The skill-based reanalysis rests on small subgroups, six radiologists and fifteen difficult cancers, so treat its size with caution even though the direction is consistent with other work on automation bias. Two claims that circulate about this episode are wrong and should not be repeated: the 2004 British study did not find readers detecting barely half of malignancies with prompts against 68% without, it found no significant difference in reader sensitivity or specificity either way, and there is no 26% figure for wrong decisions in the well-known 2012 systematic review of automation bias. Finally, this generation of software is not comparable to modern systems. It used hand-engineered features feeding a shallow trained network, not the deep learning behind the screening trials now reporting real gains.",
+  "sources": [
+   {
+    "name": "New England Journal of Medicine (April 2007) — Fenton et al., 'Influence of Computer-Aided Detection on Performance of Screening Mammography'; NEJM blocks automated fetchers, so this is the PubMed record",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17409321/"
+   },
+   {
+    "name": "Journal of the National Cancer Institute (August 2011) — Fenton et al., 'Effectiveness of Computer-Aided Detection in Community Mammography Practice', free full text on PubMed Central",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3149041/"
+   },
+   {
+    "name": "JAMA Internal Medicine (November 2015) — Lehman et al., 'Diagnostic Accuracy of Digital Screening Mammography With and Without Computer-Aided Detection', free full text on PubMed Central",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4836172/"
+   },
+   {
+    "name": "British Journal of Radiology (January 2004) — Taylor et al., 'An evaluation of the impact of computer-based prompts on screen readers' interpretation of mammograms'; PubMed record",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14988134/"
+   },
+   {
+    "name": "Medical Decision Making (January 2013) — Povyakalo et al., 'How to Discriminate between Computer-Aided and Computer-Hindered Decisions'; PubMed record",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23300205/"
+   },
+   {
+    "name": "Journal of the American College of Radiology (October 2010) — Rao et al., 'How widely is computer-aided detection used in screening and diagnostic mammography?'; PubMed record",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20889111/"
+   },
+   {
+    "name": "CMS (August 2017) — Transmittal 3844, Change Request 10181, replacing the mammography G-codes with CPT codes that include CAD, effective 1 January 2018",
+    "url": "https://www.cms.gov/Regulations-and-Guidance/Guidance/Transmittals/2017Downloads/R3844CP.pdf"
+   },
+   {
+    "name": "SPIE OE Reports (June 1999) — R. Winn Hardin, contemporaneous technical account of the neural networks inside ImageChecker",
+    "url": "https://spie.org/news/computer-aided-diagnosis-becomes-a-reality-in-mammography"
    }
   ]
  },

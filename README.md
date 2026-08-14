@@ -4,7 +4,7 @@ A [Rational Optimist Society](https://rationaloptimistsociety.com) project.
 
 **Live: https://paleofaire.github.io/ai-story-bank**
 
-147 true, sourced stories of artificial intelligence doing something good — curing
+149 true, sourced stories of artificial intelligence doing something good — curing
 disease, catching cancer early, restoring lost abilities, teaching children,
 protecting the planet.
 
@@ -19,7 +19,7 @@ path, and the counter-argument has to be concrete.
 
 1. **It happened.** No demos, no promises, no "coming soon."
 2. **It's measured.** A number, with a stated baseline.
-3. **It has receipts.** 395 primary sources — papers, regulatory filings,
+3. **It has receipts.** 412 primary sources — papers, regulatory filings,
    government records — not press releases.
 
 ## We publish our own counter-evidence
@@ -28,7 +28,7 @@ A bank that only carries good news is propaganda. This one includes the AI
 stethoscope trial that failed because 80% of GP practices never used the device;
 the randomised trial where doctors given GPT-4 did no better than doctors without
 it; and the school whose own homeschool arm learned at 1x while its campus arm hit
-2.6x. 113 of the 147 stories carry a published caveat naming their limits.
+2.6x. 115 of the 149 stories carry a published caveat naming their limits.
 
 Several widely circulated claims were investigated and **rejected** — including a
 much-shared story about a child saved by a drone-delivered antivenom flight, whose
