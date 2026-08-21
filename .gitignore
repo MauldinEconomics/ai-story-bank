@@ -7,3 +7,11 @@ proof.html
 *.tmp
 *.bak-*
 .DS_Store
+
+# Internal working documents. They live in this folder for convenience but must
+# never be published: the rejects file names claims we judged false, and the
+# extraction file is a wholesale copy of another site's content. The
+# switch-to-custom-domain.sh script runs `git add -A`, which would sweep every
+# one of them into a public repo.
+AI Story Bank - *.md
+aiopportunities.org - *.md
