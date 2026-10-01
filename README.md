@@ -2,7 +2,7 @@
 
 A [Rational Optimist Society](https://rationaloptimistsociety.com) project.
 
-**Live: https://paleofaire.github.io/ai-story-bank**
+**Live: https://stories.rationaloptimistsociety.com**
 
 149 true, sourced stories of artificial intelligence doing something good — curing
 disease, catching cancer early, restoring lost abilities, teaching children,
